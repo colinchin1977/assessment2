@@ -467,3 +467,84 @@ header h2{
 }
 
 /* :::: END OF PRACTICE :::: */
+
+/* :::: START OF START LEARNING :::: */
+
+/* --- DESKTOP SECTION --- */
+
+.learning {
+	background-color: #e7e7ef;
+	grid-column: full--start / full--end;
+}
+
+.learning-title {
+	font-size: 2.4rem;
+	font-weight: 700;
+	padding: 2rem 0;
+	text-align: center;
+}
+
+.learning-container {
+	display: grid;
+	grid-column: full--start / full-end;
+	grid-template-columns: repeat(3, 1fr);
+	margin-left: 4.5rem;
+	margin-right: 4.5rem;
+}
+
+.learningcard {
+	background-color: #fff;
+	margin: 2rem;
+	padding: 2;
+	text-decoration: none;
+}
+
+.learningcard img {
+	width: 100%;
+}
+
+.learningcard a {
+	text-decoration: none;
+	color: #303646;
+}
+
+.learningcard h4 {
+	font-size: 2rem;
+	margin-left: 1rem;
+	padding: 1rem 0;
+}
+
+.learningcard p {
+	font-size: 1.4rem;
+	margin-left: 1rem;
+	padding-bottom: 0.5rem;
+	line-height: 1.5;
+}
+
+.learningcard:hover {
+	transition: 0.5s ease-out;
+    transform: scale(1.05);
+}
+
+.learning-mobile {
+	display: none;
+}
+
+/* --- MOBILE SECTION --- */
+
+@media only screen and (max-width: 37.5em), (max-width: 48em) {
+	.learning {
+		display: none;
+	}
+
+	.learning-mobile {
+		display: grid;
+		grid-column: full--start / full--end;
+	}
+}
+
+.learning-mobile-title h3 {
+	text-align: center;
+}
+
+/* :::: END OF START LEARNING :::: */
