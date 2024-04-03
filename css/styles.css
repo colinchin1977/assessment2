@@ -1,4 +1,4 @@
-@import url('href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Source+Sans+Pro:wght@300;400&display=swap"');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Source+Sans+Pro:wght@300;400&display=swap");
 
 /* Useful sites to convert units of measurements */
 /* https://nekocalc.com/px-to-rem-converter */
@@ -319,7 +319,7 @@ header h2{
 	font-size: 1.2rem;
 	background-color: #f0f0f0;
 	grid-column: full--start / full--end;
-	padding: 1rem 1.5rem 2rem 1.5rem;
+	padding: 1rem 1.5rem 1.5rem 1.5rem;
 }
 
 .footer-copyright {
@@ -363,8 +363,8 @@ header h2{
 /* --- DESKTOP SECTION --- */
 
 .practice {
-	background-color: #f0f0f0;
-	padding: 2rem 1.5rem;
+	background-color: #fff;
+	padding: 2rem 1.5rem;	
 }
 
 .practice img {
@@ -387,7 +387,7 @@ header h2{
 }
 
 .info {
-	background-color: #f0f0f0;
+	background-color: #fff;
 	border-left: 1px solid #e7e7ef;
 	display: grid;
 	grid-template-rows: repeat(3, 1fr);
@@ -398,7 +398,7 @@ header h2{
 .info-block {
 	padding-left: 1em;
 	display: grid;
-	grid-template-columns: 0.4fr 0.6fr;
+	grid-template-columns: 0.35fr 0.65fr;
 	column-gap: 5%;
 	border-bottom: 1px solid #e7e7ef;
 	border-top: 1px solid #e7e7ef;
@@ -468,13 +468,14 @@ header h2{
 
 /* :::: END OF PRACTICE :::: */
 
-/* :::: START OF START LEARNING :::: */
+/* :::: START OF LEARNING :::: */
 
 /* --- DESKTOP SECTION --- */
 
 .learning {
 	background-color: #e7e7ef;
 	grid-column: full--start / full--end;
+	padding-bottom: 2rem;
 }
 
 .learning-title {
@@ -490,11 +491,11 @@ header h2{
 	grid-template-columns: repeat(3, 1fr);
 	margin-left: 4.5rem;
 	margin-right: 4.5rem;
+	gap: 2rem;
 }
 
 .learningcard {
 	background-color: #fff;
-	margin: 2rem;
 	padding: 2;
 	text-decoration: none;
 }
@@ -543,8 +544,161 @@ header h2{
 	}
 }
 
+.learning-mobile {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
 .learning-mobile-title h3 {
+	font-size: 2.4rem;
+	font-weight: 700;
 	text-align: center;
 }
 
-/* :::: END OF START LEARNING :::: */
+.learning-mobile-container {
+	display: grid;
+	grid-column: 1fr;
+	margin: 1rem 1rem 0rem;
+	row-gap: 0.5rem;
+	background-color: fff;
+}
+
+.learning-mobile-card {
+	width: 100%;
+	background-color: #d7d7d7;
+}
+
+.learning-mobile-card a {
+	text-decoration: none;
+}
+
+.learning-mobile-card p {
+	color: #303646;
+	font-size: 2rem;
+	font-weight: 700;
+	padding: 1rem 1rem 1.5rem;
+}
+
+/* :::: END OF LEARNING :::: */
+
+/* :::: START OF THESIS :::: */
+
+/* --- DESKTOP SECTION --- */
+
+.thesis {
+	background-color: #f7f7f7;
+	grid-column: full--start / full--end;
+}
+
+.thesis-title {
+	font-size: 2.4rem;
+	font-weight: 700;
+	padding: 2rem 0;
+	text-align: center;
+}
+
+.thesis-container {
+	display: grid;
+	grid-template-columns: 0.6fr 0.4fr;
+}
+
+.video {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.video video {
+	width: 100%;
+	height: auto;
+}
+
+.video h3 {
+	font-size: 2.4rem;
+	font-weight: 700;
+	padding: 2rem 0rem;
+}
+
+.video-text {
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+.thesis-right {
+	background-color: #f7f7f7;
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	row-gap: 3px;
+	margin-top: 2rem;
+}
+
+.thesis-right-block {
+	padding-left: 1em;
+	display: grid;
+	grid-template-columns: 0.35fr 0.65fr;
+	column-gap: 5%;
+	align-items: center;
+}
+
+.thesis-right-block img {
+	width: 100%;
+	padding: 1em 0em;
+}
+
+.thesis-right-block h4 {
+	color: #303646;
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+
+.thesis-right-block p {
+	font-size: 1.3rem;
+	margin-bottom: 1rem;
+}
+
+.thesis-right-block:first-child {
+	background-color: #d7d7d7;
+}
+
+.thesis-mobile {
+	display: none;
+}
+
+/* --- MOBILE SECTION --- */
+
+@media only screen and (max-width: 37.5em), (max-width: 48em) {
+	.thesis {
+		display: none;
+	}
+
+	.thesis-mobile {
+		display: grid;
+		grid-column: full--start / full--end;
+	}
+}
+
+.thesis-mobile {
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+	border-top: 1px solid #e7e7ef;
+	background-color: #fff;
+}
+
+.thesis-mobile-container {
+	display: grid;
+	grid-column: full--start / full--end;
+}
+
+.thesis-mobile-container h3 {
+	font-size: 2.4rem;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 2rem;
+	padding-bottom: 1.5rem;
+}
+
+.video-mobile video {
+	width: 100%;
+	height: auto;
+}
+
+/* :::: END OF THESIS :::: */
